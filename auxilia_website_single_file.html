@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Auxilia — Student-led NGO, Bengaluru</title>
+  <style>
+    :root{--accent:#0b6dfd;--muted:#666;--bg:#f7fbff;--card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0b2545}
+    header{background:linear-gradient(180deg,var(--accent),#1f7bff); color:white; padding:28px 16px}
+    .container{max-width:980px;margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;background:#fff2;border-radius:10px;display:grid;place-items:center;color:var(--accent);font-weight:700}
+    nav{margin-left:auto}
+    nav a{color:white;text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+    .hero h1{margin:8px 0;font-size:clamp(24px,4vw,36px)}
+    .hero p{color:rgba(255,255,255,0.95);line-height:1.5}
+    .cta{display:inline-block;background:white;color:var(--accent);padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    main{padding:28px 0}
+    .grid{display:grid;gap:16px}
+    .two{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(11,45,90,0.06)}
+    h2{margin:0 0 8px 0}
+    p.small{color:var(--muted);margin:0 0 12px 0}
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:120px;padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#f6fbff);text-align:center}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fafcff)}
+    .team-list{display:flex;flex-wrap:wrap;gap:12px}
+    .team-member{padding:10px;border-radius:10px;background:#fff;min-width:160px}
+    footer{padding:28px 0;color:var(--muted)}
+    .contact{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent);padding:10px 12px;border-radius:9px;text-decoration:none;font-weight:700}
+    @media(min-width:800px){.hero{grid-template-columns:1fr 420px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:18px">
+        <div class="brand">
+          <div class="logo">A</div>
+          <div>
+            <div style="font-weight:800">Auxilia</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.9)">Student-led NGO — Bengaluru</div>
+          </div>
+        </div>
+        <nav style="margin-left:auto">
+          <a href="#about">About</a>
+          <a href="#impact">Impact</a>
+          <a href="#projects">Work</a>
+          <a href="#team">Team</a>
+          <a href="#getinvolved">Get Involved</a>
+        </nav>
+      </div>
+      <div style="margin-top:18px" class="hero">
+        <div>
+          <h1>Auxilia — empowering underfunded NGOs through student action</h1>
+          <p>We connect students with grassroots NGOs across Bengaluru, helping with outreach, volunteers, and small-scale funding. We believe local organisations deserve sustainable support — and student energy can provide it.</p>
+          <a class="cta" href="#getinvolved">Join a drive</a>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Quick facts</h3>
+          <p class="small">Founded and run by high-school students. Action-oriented, low-overhead, and impact-first.</p>
+          <div class="stats">
+            <div class="stat"><div style="font-weight:800;font-size:18px">7</div><div style="font-size:13px;color:var(--muted)">NGO partners</div></div>
+            <div class="stat"><div style="font-weight:800;font-size:18px">18</div><div style="font-size:13px;color:var(--muted)">core members</div></div>
+            <div class="stat"><div style="font-weight:800;font-size:18px">120+</div><div style="font-size:13px;color:var(--muted)">volunteer hrs</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Auxilia</h2>
+      <p class="small">Auxilia began as a student initiative to help underfunded non-profits in Bengaluru. We offer volunteer matching, social media support, supply drives, and small micro-grants. Our projects focus on sustainability, transparency, and student leadership.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <a class="btn-outline" href="#projects">See Projects</a>
+        <a class="btn-outline" href="#getinvolved">Volunteer</a>
+      </div>
+    </section>
+
+    <section id="impact" style="margin-top:16px" class="grid two">
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p class="small">To create a replicable student-led model that supports grassroots NGOs with volunteers, resources, and capacity-building tools. We prioritise long-term partnerships and measurable outcomes.</p>
+        <h3 style="margin-top:12px">How we work</h3>
+        <ul>
+          <li>Partner with small NGOs and co-design short-term projects</li>
+          <li>Run volunteer drives and training sessions</li>
+          <li>Support NGOs with digital outreach and micro-fundraising</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Impact highlights</h2>
+        <div class="stats" style="margin-top:10px">
+          <div class="stat"><div style="font-weight:700;">7</div><div class="small">partners</div></div>
+          <div class="stat"><div style="font-weight:700;">18</div><div class="small">core members</div></div>
+          <div class="stat"><div style="font-weight:700;">120+</div><div class="small">volunteer hours</div></div>
+          <div class="stat"><div style="font-weight:700;">10+</div><div class="small">campaigns run</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:16px">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <div class="project card">
+          <h3>Volunteer Match</h3>
+          <p class="small">Trained student volunteers placed with partner NGOs for monthly shifts — education, feeding programs, and logistics.</p>
+        </div>
+        <div class="project card">
+          <h3>Supply Drives</h3>
+          <p class="small">Coordinated donation drives for books, clothes, and food with transparent distribution reports.</p>
+        </div>
+        <div class="project card">
+          <h3>Digital Helpdesk</h3>
+          <p class="small">Helping NGOs build basic social media presence and simple donor pages to increase visibility.</p>
+        </div>
+        <div class="project card">
+          <h3>Youth Fellowship</h3>
+          <p class="small">A micro-fellowship program where student volunteers work with NGOs on defined 4-week projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:16px" class="card">
+      <h2>Our Team</h2>
+      <p class="small">Led by student volunteers from Bengaluru schools. We value curiosity, responsibility, and follow-through.</p>
+      <div class="team-list" style="margin-top:10px">
+        <div class="team-member">
+          <strong>Founder</strong>
+          <div>{{Your Name}}</div>
+          <div class="small">Founder & Lead Coordinator</div>
+        </div>
+        <div class="team-member">
+          <strong>Operations</strong>
+          <div>Team</div>
+          <div class="small">Logistics & events</div>
+        </div>
+        <div class="team-member">
+          <strong>Outreach</strong>
+          <div>Team</div>
+          <div class="small">NGO partnerships & comms</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="getinvolved" style="margin-top:16px" class="grid two">
+      <div class="card">
+        <h2>Get Involved</h2>
+        <p class="small">Want to volunteer, partner, or donate? Fill the form or contact us directly.</p>
+        <form onsubmit="submitForm(event)">
+          <label style="display:block;margin-top:8px">Name</label>
+          <input id="name" style="padding:10px;width:100%;border-radius:8px;border:1px solid #eee" required>
+          <label style="display:block;margin-top:8px">Email</label>
+          <input id="email" type="email" style="padding:10px;width:100%;border-radius:8px;border:1px solid #eee" required>
+          <label style="display:block;margin-top:8px">Message / Role</label>
+          <input id="message" style="padding:10px;width:100%;border-radius:8px;border:1px solid #eee">
+          <div style="margin-top:10px;display:flex;gap:10px">
+            <button class="btn-outline" type="submit">Send</button>
+            <a class="btn-outline" href="mailto:auxiliango@gmail.com">Email us</a>
+          </div>
+        </form>
+        <div id="thanks" style="display:none;margin-top:10px;color:green">Thanks — we will reach out soon.</div>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="small">Auxilia — Bengaluru</p>
+        <p class="small">Email: <a href="mailto:auxiliango@gmail.com">auxiliango@gmail.com</a></p>
+        <p class="small">Instagram: @auxilia.ngo</p>
+        <h3 style="margin-top:12px">Support</h3>
+        <p class="small">We accept donations (in-kind & small funds). Email us with subject: SUPPORT.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:16px" class="card">
+      <h2>Gallery</h2>
+      <p class="small">Upload photos from drives and add them here. (Placeholder images)</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px">
+        <div style="height:90px;background:linear-gradient(180deg,#eef6ff,#fff);border-radius:8px"></div>
+        <div style="height:90px;background:linear-gradient(180deg,#fff8ef,#fff);border-radius:8px"></div>
+        <div style="height:90px;background:linear-gradient(180deg,#f8fff6,#fff);border-radius:8px"></div>
+        <div style="height:90px;background:linear-gradient(180deg,#fff6fb,#fff);border-radius:8px"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <strong>Auxilia</strong>
+          <div class="small">Student-led NGO • Bengaluru</div>
+        </div>
+        <div class="small">Made with ❤️ • Replace placeholders with real content</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      var name=document.getElementById('name').value;
+      var email=document.getElementById('email').value;
+      var msg=document.getElementById('message').value;
+      // naive local storage save (no server)
+      var db = JSON.parse(localStorage.getItem('auxilia_contacts')||'[]');
+      db.push({name:name,email:email,msg:msg,time:Date.now()});
+      localStorage.setItem('auxilia_contacts',JSON.stringify(db));
+      document.getElementById('thanks').style.display='block';
+      setTimeout(()=>{document.getElementById('thanks').style.display='none'},3000);
+      document.getElementById('name').value='';document.getElementById('email').value='';document.getElementById('message').value='';
+    }
+  </script>
+</body>
+</html>
